@@ -1,11 +1,20 @@
 const express = require('express');
-const app ONI express();
-const port - 3000;
+const routerApi = require('./routes');
+
+const app = express();
+const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send( "Hola mi server en express');
- }
+  res.send('Hola mi server en express');
+});
+
+app.get('/nueva-ruta', (req, res) => {
+  res.send('Hola soy una nueva ruta');
+});
+
+routerApi(app);
+
+
 app.listen(port, () => {
-  console.log('MS port' +   port);
-}); 
-You, seconds ago Uncommitted changes
+  console.log('Mi port: ' + port);
+});
