@@ -1,0 +1,12 @@
+{"name": "my-store",
+"version": "1.0.0",
+"description": ... -
+"main": "index.js",
+  Debug
+"scripts":{
+   "dev": "hodemon index."
+}
+ "keywords": (1.
+ "author": ".,
+ "license": "ISC"
+}
